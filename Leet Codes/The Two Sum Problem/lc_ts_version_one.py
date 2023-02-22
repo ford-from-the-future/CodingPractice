@@ -10,5 +10,15 @@
 #Iterate througth the given array, adding each number to every other number one at a time until it equals the value of the target var
 #grab the index of said numbers and return them
 
+from itertools import cycle
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for _ in nums:
+            nums = cycle(nums)
+            for _ in range(len(nums)):
+                run_it = _ + nums
+                if run_it != target:
+                    nums.pop(0)
+                    print(nums)
+        
