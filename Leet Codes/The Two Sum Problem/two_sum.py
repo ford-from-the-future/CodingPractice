@@ -6,5 +6,9 @@
 #You may assume that each input would have exactly one solution, and you may not use the same element twice.
 #You can return the answer in any order.
 
+#My Solution
+#Iterate througth the given array, adding each number to every other number one at a time until it equals the value of the target var
+#grab the index of said numbers and return them
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
